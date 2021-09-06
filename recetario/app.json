@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/BC-MAY-21-RN/kata-03-recetario-k03-t02-1"
   }
 }
