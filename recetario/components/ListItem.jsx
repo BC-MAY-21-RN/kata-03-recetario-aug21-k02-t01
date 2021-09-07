@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableHighlight } from 'react-native';
 
-const ListItem = ({item, customWidth, customHeight}) => {
+const ListItem = ({item, customWidth, customHeight, handleShowItem}) => {
   return(
     <View
       style={[
@@ -12,19 +12,25 @@ const ListItem = ({item, customWidth, customHeight}) => {
         }
       ]}
     >
-      <Image 
-        style={
-          styles.itemImage
-        }
-        source={{
-          uri: 'https://w6h5a5r4.rocketcdn.me/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg',
-        }}
-      />
-      <Text
-        style={styles.itemName}
+      <TouchableHighlight
+        onPress={() => handleShowItem(item)}
       >
-        {item.name}
-      </Text>
+        <View>
+          <Image 
+            style={
+              styles.itemImage
+            }
+            source={{
+              uri: 'https://w6h5a5r4.rocketcdn.me/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg',
+            }}
+          />
+          <Text
+            style={styles.itemName}
+          >
+            {item.name}
+          </Text>
+        </View>
+      </TouchableHighlight>
     </View>
   );
 };

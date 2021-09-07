@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, View,  Text, StyleSheet } from 'react-native';
 import ListItem from './ListItem';
 
-const HorizontalList = ({items, title, customWidth, customHeight}) => {
+const HorizontalList = ({items, title, customWidth, customHeight, handleShowItem}) => {
   return(
     <View
       style={styles.container}
@@ -22,7 +22,9 @@ const HorizontalList = ({items, title, customWidth, customHeight}) => {
             item={listItem} 
             key={index} 
             customWidth={customWidth} 
-            customHeight={customHeight} />
+            customHeight={customHeight} 
+            handleShowItem={handleShowItem}
+          />
         ))}
       </ScrollView>
     </View>
