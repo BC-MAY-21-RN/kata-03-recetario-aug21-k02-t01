@@ -1,13 +1,14 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-const ListItem = ({item, customWidth}) => {
+const ListItem = ({item, customWidth, customHeight}) => {
   return(
     <View
       style={[
         styles.itemContainer,
         {
-          width: customWidth || styles.itemContainer.width
+          width: customWidth || styles.itemContainer.width,
+          height: customHeight || styles.itemContainer.height,
         }
       ]}
     >
@@ -30,7 +31,6 @@ const ListItem = ({item, customWidth}) => {
 
 const styles = StyleSheet.create({
   itemImage: {
-    width: '100%',
     height: 105,
     borderRadius: 6,
   },
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     padding: 0,
     margin: 0,
     marginTop: 5,
+    color: '#fff',
   }
 });
 

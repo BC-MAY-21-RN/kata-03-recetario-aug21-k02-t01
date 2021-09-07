@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, View,  Text, StyleSheet } from 'react-native';
-import ListItem from './listItem';
+import ListItem from './ListItem';
 
 const HorizontalList = ({items, title, customWidth, customHeight}) => {
   return(

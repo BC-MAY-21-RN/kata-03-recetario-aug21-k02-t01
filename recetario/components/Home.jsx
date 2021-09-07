@@ -1,18 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import HorizontalList from './horizontalList';
+import { StyleSheet, View } from 'react-native';
+import HorizontalList from './HorizontalList';
 
 const Home = () => {
   return(
     <View style={styles.container}>
       <HorizontalList 
         items={recipes}
-        title='Trending'
+        title='TRENDING'
       />
       <HorizontalList 
         items={recipes}
-        title='Recent'
-        customWidth={200}
+        title='RECENT'
+        customWidth={190}
       />
     </View>
   );
@@ -54,7 +54,7 @@ const recipes = [
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#282828',
   },
 });
 
