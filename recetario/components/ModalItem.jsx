@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, View, Text, StyleSheet } from 'react-native';
+import BackgroundImage from './BackgroundImage';
 
 const CustomModal = ({onClose, isVisible, itemToDisplay}) => {
 
@@ -9,15 +10,9 @@ const CustomModal = ({onClose, isVisible, itemToDisplay}) => {
       visible={isVisible}
       onRequestClose={onClose}
     >
-      <View
-        style={styles.square}
-      >
-        <Text
-          style={styles.text}
-        >
-          {itemToDisplay.name}
-          </Text>
-      </View>
+      <BackgroundImage 
+        item={itemToDisplay}
+      /> 
     </Modal>
   );
 };
