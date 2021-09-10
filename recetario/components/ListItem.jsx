@@ -21,7 +21,7 @@ const ListItem = ({item, customWidth, customHeight, handleShowItem}) => {
               styles.itemImage
             }
             source={{
-              uri: 'https://w6h5a5r4.rocketcdn.me/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg',
+              uri: item && item.image || 'https://w6h5a5r4.rocketcdn.me/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg',
             }}
           />
           <Text

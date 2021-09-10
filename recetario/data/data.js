@@ -53,7 +53,6 @@ export const recipes = [
         },
       ],
     },
-  ​
     {
       name: 'Cereal',
       trending: true,
@@ -75,7 +74,6 @@ export const recipes = [
         },
       ],
     },
-  ​
     {
       name: 'Lemon Pie',
       trending: true,
@@ -117,7 +115,6 @@ export const recipes = [
         },
       ],
     },
-  ​
     {
       name: 'Pancakes',
       trending: true,
@@ -205,12 +202,11 @@ export const recipes = [
         },
       ],
     },
-  ​
     {
       name: 'Salmon with Garlic',
       trending: true,
       recent: true,
-      image: ,
+      image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/SalmonwithGarlic.jpeg?alt=media&token=d0e31717-fbb2-4ddc-b363-9a3e38b34e0a',
       servings: '1 serving',
       ingredients: [
         {

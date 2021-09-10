@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Button } from 'react-native';
 import HorizontalList from './HorizontalList';
 import CustomModal from './ModalItem';
+import { recipes } from '../data/data.js'
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -33,39 +34,6 @@ const Home = () => {
     </View>
   );
 };
-
-const recipes = [
-  {
-    name: 'item 1'
-  },
-  {
-    name: 'Mi receta'
-  },
-  {
-    name: 'item 3'
-  },
-  {
-    name: 'item 3'
-  },
-  {
-    name: 'item 3'
-  },
-  {
-    name: 'item 3'
-  },
-  {
-    name: 'item 3'
-  },
-  {
-    name: 'item 3'
-  },
-  {
-    name: 'item 3'
-  },
-  {
-    name: 'item 3'
-  }
-];
 
 const styles = StyleSheet.create({
   container: {
