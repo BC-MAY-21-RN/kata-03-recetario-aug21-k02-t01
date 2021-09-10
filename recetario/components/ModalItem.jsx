@@ -12,6 +12,7 @@ const CustomModal = ({onClose, isVisible, itemToDisplay}) => {
     >
       <BackgroundImage 
         item={itemToDisplay}
+        title={itemToDisplay.trending ? 'TRENDING' : 'RECENT'}
       /> 
     </Modal>
   );

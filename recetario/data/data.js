@@ -27,7 +27,7 @@ export const recipes = [
     {
       name: 'Pasta',
       trending: true,
-      recent: true,
+      recent: false,
       image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/pasta.jpeg?alt=media&token=730f6b65-4b8f-41ee-ac7e-3836c1b66751',
       servings: '1 serving',
       ingredients: [
@@ -55,8 +55,8 @@ export const recipes = [
     },
     {
       name: 'Cereal',
-      trending: true,
-      recent: false,
+      trending: false,
+      recent: true,
       image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/cereal.jpeg?alt=media&token=840456e9-726d-4e4a-8bf4-e0e3c5f1179c',
       servings: '1 servings',
       ingredients: [
@@ -76,7 +76,7 @@ export const recipes = [
     },
     {
       name: 'Lemon Pie',
-      trending: true,
+      trending: false,
       recent: true,
       image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/limonPie.jpeg?alt=media&token=21d4f81a-511f-4b6d-9047-82f6907484b3',
       servings: '8 pieces',
@@ -142,7 +142,7 @@ export const recipes = [
     },
     {
       name: 'Mexican Eggs',
-      trending: true,
+      trending: false,
       recent: true,
       image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/Mexican%20Eggs.jpeg?alt=media&token=0186ace9-5867-4857-9461-14f06c0721a1',
       servings: '4 servings',
@@ -205,7 +205,7 @@ export const recipes = [
     {
       name: 'Salmon with Garlic',
       trending: true,
-      recent: true,
+      recent: false,
       image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/SalmonwithGarlic.jpeg?alt=media&token=d0e31717-fbb2-4ddc-b363-9a3e38b34e0a',
       servings: '1 serving',
       ingredients: [

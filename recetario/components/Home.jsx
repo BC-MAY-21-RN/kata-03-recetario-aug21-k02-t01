@@ -16,12 +16,12 @@ const Home = () => {
   return(
     <View style={styles.container}>
       <HorizontalList 
-        items={recipes}
+        items={recipes.filter(recipe => recipe.trending)}
         title='TRENDING'
         handleShowItem={handleShowItem}
       />
       <HorizontalList 
-        items={recipes}
+        items={recipes.filter(recipe => recipe.recent)}
         title='RECENT'
         customWidth={190}
         handleShowItem={handleShowItem}
