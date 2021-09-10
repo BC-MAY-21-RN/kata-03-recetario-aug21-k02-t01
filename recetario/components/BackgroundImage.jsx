@@ -1,7 +1,8 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet, ImageBackground } from 'react-native';
+import ModalButtons from './ModalButtons';
 
-const BackgroundImage = ({item, title}) => {
+const BackgroundImage = ({item, title, closeButton}) => {
   return(
     <View
       style={styles.imageContainer}
@@ -16,6 +17,9 @@ const BackgroundImage = ({item, title}) => {
         <View
           style={styles.imageFilter}
         >
+          <ModalButtons 
+            closeButton={closeButton}
+          />
           <View
             style={styles.textContainer}
           >
@@ -53,11 +57,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#282828',
     opacity: 0.8,
     alignContent: 'flex-end',
+    padding: 25,
+    paddingBottom: 35,
   },
   textContainer: {
     marginTop: 'auto',
-    padding: 25,
-    paddingBottom: 35,
   },
   title: {
     color: '#fff',

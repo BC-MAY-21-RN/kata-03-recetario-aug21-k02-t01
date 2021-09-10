@@ -21,9 +21,7 @@ const IngredientsList = ({item}) => {
           {`for ${item.servings}`}
         </Text>
       </View>
-      <ScrollView
-        styles={styles.containerIngredients}
-      >
+      <ScrollView>
         {
           item.ingredients.map((ingredient, index) => (
             <IngredientRow 
