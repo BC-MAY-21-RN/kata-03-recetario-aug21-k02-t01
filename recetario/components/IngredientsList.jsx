@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, ScrollView, Text, StyleSheet } from 'react-native';
+import IngredientRow from './IngredientRow';
 
 const IngredientsList = ({item}) => {
   return(
@@ -23,60 +24,14 @@ const IngredientsList = ({item}) => {
       <ScrollView
         styles={styles.containerIngredients}
       >
-        <View
-          style={styles.ingredientRow}
-        >
-          <View>
-            <Text
-              style={styles.ingredient}
-            >
-              Pepperoni
-            </Text>
-          </View>
-          <View>
-            <Text
-              style={styles.ingredient}
-            >
-              30 gr.
-            </Text>
-          </View>
-        </View>
-        <View
-          style={styles.ingredientRow}
-        >
-          <View>
-            <Text
-              style={styles.ingredient}
-            >
-              Pepperoni
-            </Text>
-          </View>
-          <View>
-            <Text
-              style={styles.ingredient}
-            >
-              30 gr.
-            </Text>
-          </View>
-        </View>
-        <View
-          style={styles.ingredientRow}
-        >
-          <View>
-            <Text
-              style={styles.ingredient}
-            >
-              Pepperoni
-            </Text>
-          </View>
-          <View>
-            <Text
-              style={styles.ingredient}
-            >
-              30 gr.
-            </Text>
-          </View>
-        </View>
+        {
+          item.ingredients.map((ingredient, index) => (
+            <IngredientRow 
+              key={index}
+              ingredient={ingredient}
+            />
+          ))
+        }
       </ScrollView>
     </View>
   );
