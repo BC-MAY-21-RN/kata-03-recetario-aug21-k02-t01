@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, View, Text, StyleSheet } from 'react-native';
 import BackgroundImage from './BackgroundImage';
+import IngredientsList from './IngredientsList';
 
 const CustomModal = ({onClose, isVisible, itemToDisplay}) => {
 
@@ -14,6 +15,9 @@ const CustomModal = ({onClose, isVisible, itemToDisplay}) => {
         item={itemToDisplay}
         title={itemToDisplay.trending ? 'TRENDING' : 'RECENT'}
       /> 
+      <IngredientsList 
+        item={itemToDisplay}
+      />
     </Modal>
   );
 };
