@@ -3,7 +3,7 @@ export const recipes = [
       name: 'Peperoni Pizza Pockets',
       trending: true,
       recent: false,
-      image: '',
+      image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/peperoni.jpeg?alt=media&token=ff7ff3f5-c120-4ff3-a05e-d9c01df2971b',
       servings: '2 servings',
       ingredients: [
         {
@@ -28,7 +28,7 @@ export const recipes = [
       name: 'Pasta',
       trending: true,
       recent: true,
-      image: ,
+      image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/pasta.jpeg?alt=media&token=730f6b65-4b8f-41ee-ac7e-3836c1b66751',
       servings: '1 serving',
       ingredients: [
         {
@@ -58,7 +58,7 @@ export const recipes = [
       name: 'Cereal',
       trending: true,
       recent: false,
-      image: ,
+      image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/cereal.jpeg?alt=media&token=840456e9-726d-4e4a-8bf4-e0e3c5f1179c',
       servings: '1 servings',
       ingredients: [
         {
@@ -80,7 +80,7 @@ export const recipes = [
       name: 'Lemon Pie',
       trending: true,
       recent: true,
-      image: ,
+      image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/limonPie.jpeg?alt=media&token=21d4f81a-511f-4b6d-9047-82f6907484b3',
       servings: '8 pieces',
       ingredients: [
         {
@@ -122,7 +122,7 @@ export const recipes = [
       name: 'Pancakes',
       trending: true,
       recent: false,
-      image: ,
+      image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/Pancakes.jpeg?alt=media&token=d4196f62-c1ac-4b80-bff4-667241d6081d',
       servings: '8 pieces',
       ingredients: [
         {
@@ -147,7 +147,7 @@ export const recipes = [
       name: 'Mexican Eggs',
       trending: true,
       recent: true,
-      image: ,
+      image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/Mexican%20Eggs.jpeg?alt=media&token=0186ace9-5867-4857-9461-14f06c0721a1',
       servings: '4 servings',
       ingredients: [
         {
@@ -176,7 +176,7 @@ export const recipes = [
       name: 'Classic Sandwich',
       trending: true,
       recent: false,
-      image: ,
+      image: 'https://firebasestorage.googleapis.com/v0/b/proyectodeprueba-e37f6.appspot.com/o/ClassicSandwich.jpeg?alt=media&token=e313520b-eeca-4c4a-b2ff-5b99f7760759',
       servings: '1 serving',
       ingredients: [
         {
