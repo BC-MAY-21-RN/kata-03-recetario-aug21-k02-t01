@@ -41,16 +41,6 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
   },
-  ingredientRow: {
-    flex: 1,
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    borderBottomWidth: 2,
-    borderBottomColor: '#323232',
-    padding: 8,
-    paddingTop: 13,
-    paddingBottom: 13,
-  },
   header: {
     color: '#fff',
     fontSize: 16,
