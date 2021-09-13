@@ -26,6 +26,7 @@ const Home = () => {
         items={recipes.filter(recipe => recipe.recent)}
         title='RECENT'
         customWidth={190}
+        customHeight={200}
         handleShowItem={handleShowItem}
       />
       <CustomModal

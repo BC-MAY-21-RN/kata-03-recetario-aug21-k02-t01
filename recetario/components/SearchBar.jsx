@@ -11,7 +11,7 @@ const SearchBar = () => {
         style={styles.searchIcon}
         name='search'
         size={25} 
-        color='white'
+        color='#E0D5D9'
       />
       <TextInput 
         style={styles.textInput}
@@ -22,7 +22,7 @@ const SearchBar = () => {
         style={styles.microphoneIcon}
         name='microphone' 
         size={25} 
-        color='white' 
+        color='#E0D5D9' 
       />
     </View>
   );
@@ -30,7 +30,7 @@ const SearchBar = () => {
 
 const styles = StyleSheet.create({
   searchBarContainer: {
-    marginTop: 60,
+    marginTop: 50,
     width: '90%',
     marginLeft: 'auto',
     marginRight: 'auto',

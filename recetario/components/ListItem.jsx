@@ -8,7 +8,6 @@ const ListItem = ({item, customWidth, customHeight, handleShowItem}) => {
         styles.itemContainer,
         {
           width: customWidth || styles.itemContainer.width,
-          height: customHeight || styles.itemContainer.height,
         }
       ]}
     >
@@ -17,8 +16,12 @@ const ListItem = ({item, customWidth, customHeight, handleShowItem}) => {
       >
         <View>
           <Image 
-            style={
-              styles.itemImage
+            style={[
+              styles.itemImage,
+              {
+                height: customHeight || styles.itemImage.height
+              }
+            ]
             }
             source={{
               uri: item && item.image || 'https://w6h5a5r4.rocketcdn.me/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg',
