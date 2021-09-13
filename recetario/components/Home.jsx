@@ -3,6 +3,7 @@ import { StyleSheet, View, Button } from 'react-native';
 import HorizontalList from './HorizontalList';
 import CustomModal from './ModalItem';
 import { recipes } from '../data/data.js'
+import SearchBar from './SearchBar';
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -15,6 +16,7 @@ const Home = () => {
 
   return(
     <View style={styles.container}>
+      <SearchBar />
       <HorizontalList 
         items={recipes.filter(recipe => recipe.trending)}
         title='TRENDING'
